@@ -13,7 +13,7 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-var Vehicle = /** @class */ (function () {
+var Vehicle = (function () {
     function Vehicle(name, brand, model) {
         this.name = name;
         this.brand = brand;
@@ -24,7 +24,7 @@ var Vehicle = /** @class */ (function () {
     };
     return Vehicle;
 }());
-var CarVehicle = /** @class */ (function (_super) {
+var CarVehicle = (function (_super) {
     __extends(CarVehicle, _super);
     function CarVehicle() {
         return _super !== null && _super.apply(this, arguments) || this;

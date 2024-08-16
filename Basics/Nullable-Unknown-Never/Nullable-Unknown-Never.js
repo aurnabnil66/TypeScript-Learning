@@ -1,4 +1,3 @@
-// Nullable type
 var searchName = function (value) {
     if (value) {
         console.log('Searching');
@@ -7,8 +6,7 @@ var searchName = function (value) {
         console.log('There is nothing to search');
     }
 };
-searchName('Aurnab'); // valid value is passed to the function
-// Unknown type
+searchName('Aurnab');
 var getSpeed = function (value) {
     if (typeof (value) === 'number') {
         var convertSpeed = (value * 1000) / 3600;
@@ -26,12 +24,8 @@ var getSpeed = function (value) {
 getSpeed(20);
 getSpeed('10 kmh^-1');
 getSpeed(true);
-// Never Types
 function throwError(message) {
     throw new Error(message);
 }
 ;
-// const throwError = (message: string): never => {
-//     throw new Error(message);
-// };
 throwError('Error occured');

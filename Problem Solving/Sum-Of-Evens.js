@@ -1,4 +1,3 @@
-// create a function that takes in an array of numbers and returns the sum of all even numbers in the array.
 function FindEven(inputNumbers) {
     var sumOfAllEvenNumbers = 0;
     for (var _i = 0, inputNumbers_1 = inputNumbers; _i < inputNumbers_1.length; _i++) {

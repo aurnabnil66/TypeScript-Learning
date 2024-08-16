@@ -37,3 +37,12 @@ const person: {name: string, balance: number, addBalance(money: number): string}
         return `My new balance is ${this.balance + money}`;
     },
 }
+
+// setting default value 'taxYear = 2024' instead of optional value 'taxYear?: number'
+function calculateTax(income: number, taxYear = 2024) : number {
+    if(taxYear < 2024)
+        return (income * 2);
+    return (income * 1.5)
+}
+
+console.log(calculateTax(10000));

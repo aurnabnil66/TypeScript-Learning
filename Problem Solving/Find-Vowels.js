@@ -1,4 +1,3 @@
-// write a function that takes in a astring and returns the number of vowels in the string
 function FindVowels(inputString) {
     var numberOfVowels = 0;
     for (var _i = 0, inputString_1 = inputString; _i < inputString_1.length; _i++) {

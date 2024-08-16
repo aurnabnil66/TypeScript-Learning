@@ -12,3 +12,18 @@ const user: {
 }
 
 console.log(user.company, ' ', user.age);
+
+// object with type aliases
+type Employee = {
+    readonly id: number,
+    name: string,
+    retire: (date: Date) => void
+}
+
+let employeeType: Employee = {
+    id: 1,
+    name: 'John Doe',
+    retire: (date: Date) => {
+        console.log(date);
+    }
+}
